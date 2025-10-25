@@ -309,6 +309,63 @@ body {
   }
 }
 
+/* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding-block: 10px;
+  }
+
+  .header > .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .header.nav-active .navbar {
+    visibility: visible;
+    opacity: 1;
+    max-height: 400px;
+    padding-top: 15px;
+  }
+
+  .nav-toggle-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+
+  .navbar-link, .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar .btn {
+    margin-left: 0;
+  }
+}
+
+/* Hide toggle button on desktop */
+@media (min-width: 769px) {
+  .nav-toggle-btn {
+    display: none;
+  }
+}
+
+
 
 
 
