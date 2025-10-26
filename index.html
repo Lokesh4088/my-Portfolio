@@ -489,82 +489,78 @@
       -->
 
       <section class="section contact" id="contact">
-        <div class="container">
+  <div class="container">
 
-          <div class="contact-card">
+    <div class="contact-card">
 
-            <p class="card-subtitle">Don't be shy</p>
+      <p class="card-subtitle">Don't be shy</p>
+      <h2 class="h2 section-title">Drop Me a Line</h2>
 
-            <h2 class="h2 section-title">Drop Me a Line</h2>
+      <div class="wrapper">
 
-            <div class="wrapper">
+        <!-- Salesforce Web-to-Lead integrated form -->
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+              method="POST" class="contact-form">
 
-              <form action="" class="contact-form">
+          <!-- Your Salesforce Org ID -->
+          <input type="hidden" name="oid" value="00DgL000005c8Mf">
 
-                <input type="text" name="name" placeholder="Name" required class="contact-input">
+          <!-- Redirect URL after form submission -->
+          <input type="hidden" name="retURL" value="https://lokesh4088.github.io/my-Portfolio/">
 
-                <input type="email" name="email" placeholder="Email" required class="contact-input">
+          <!-- Lead Fields -->
+          <input type="text" id="first_name" name="first_name" placeholder="First Name" required class="contact-input">
+          <input type="text" id="last_name" name="last_name" placeholder="Last Name" required class="contact-input">
+          <input type="email" id="email" name="email" placeholder="Email" required class="contact-input">
+          <textarea id="description" name="description" placeholder="Message" required class="contact-input"></textarea>
 
-                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+          <button type="submit" class="btn-submit">Submit Message</button>
+        </form>
 
-                <button type="submit" class="btn-submit">Submit Message</button>
+        <ul class="contact-list">
 
-              </form>
-
-              <ul class="contact-list">
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="location"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Address</h3>
-
-                    <address class="contact-item-link">
-                      1-117, Opp: Sivalayam Temple, Madupalli , Ainavalli mandal, East Godavari , Andhra Pradesh - 533211 , India
-                    </address>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="mail"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Email</h3>
-
-                    <a href="mailto:hello@ethan.com" class="contact-item-link">naidusunny9876@gmail.com | lokeshnimmakayala88@gmail.com</a>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="call"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Phone</h3>
-
-                    <a href="tel:+1234567890" class="contact-item-link">+91 6304122265  </a>
-                  </div>
-
-                </li>
-
-              </ul>
-
+          <li class="contact-item">
+            <div class="contact-icon">
+              <ion-icon name="location"></ion-icon>
             </div>
+            <div>
+              <h3 class="contact-item-title">Address</h3>
+              <address class="contact-item-link">
+                1-117, Opp: Sivalayam Temple, Madupalli, Ainavalli Mandal, East Godavari, Andhra Pradesh - 533211, India
+              </address>
+            </div>
+          </li>
 
-          </div>
+          <li class="contact-item">
+            <div class="contact-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+            <div>
+              <h3 class="contact-item-title">Email</h3>
+              <a href="mailto:naidusunny9876@gmail.com" class="contact-item-link">
+                naidusunny9876@gmail.com | lokeshnimmakayala88@gmail.com
+              </a>
+            </div>
+          </li>
 
-        </div>
-      </section>
+          <li class="contact-item">
+            <div class="contact-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+            <div>
+              <h3 class="contact-item-title">Phone</h3>
+              <a href="tel:+916304122265" class="contact-item-link">+91 6304122265</a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 
       <!-- Gallery Section -->
